@@ -28,7 +28,7 @@ app.post("/mail", async (req, res) => {
     });
     var mailOptions = {
       from: EMAIL,
-      to: req.body.email,
+      to: EMAIL,
       subject: "Response from client",
       text: `Hi Raj..client sent one email,
       Name:${req.body.name}
